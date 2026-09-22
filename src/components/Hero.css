@@ -1,0 +1,16 @@
+.hero-container{
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.hero-graphic{
+    width: 5dvh;
+    height: 5dvh;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: red;
+
+}

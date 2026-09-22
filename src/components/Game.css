@@ -1,0 +1,12 @@
+.game{
+    /* dvh = Dynamic View Height */
+    width: 50dvh;
+    height: 100dvh;
+
+    background-color: rgb(210, 229, 161);
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
