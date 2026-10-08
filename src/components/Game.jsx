@@ -2,7 +2,7 @@ import {useState, useRef} from 'react';
 import './Game.css';
 import Hero from './Hero';
 
-const Game = () => {
+const Game = (props) => {
 
     const [heroPos, setHeroPos] = useState({x:20, y:50});
 
@@ -19,6 +19,9 @@ const Game = () => {
 
     return(
         <div className="game" onMouseMove={onMove} ref={gameRef}>
+            {props.pieces.map(piece => 
+                <p>{piece.type.type}</p>
+            )}
             <Hero pos={heroPos}/>
         </div>
     )
